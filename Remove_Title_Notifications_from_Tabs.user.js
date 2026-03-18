@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         remove-title-notifications
+// @name         Remove Title Notifications
 // @namespace    distractions
-// @version      0.1
+// @version      0.2
 // @description  Remove unread notification count from tab titles
 // @author       Zakary2841
 // @match        *://*/*
