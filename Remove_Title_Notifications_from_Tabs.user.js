@@ -6,8 +6,8 @@
 // @author       Zakary2841
 // @match        *://*/*
 // @grant        none
-// @downloadURL https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Remove_Title_Notifications_from_Tabs.js
-// @updateURL   https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Remove_Title_Notifications_from_Tabs.js
+// @downloadURL https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Remove_Title_Notifications_from_Tabs.user.js
+// @updateURL   https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Remove_Title_Notifications_from_Tabs.user.js
 // ==/UserScript==
 
 
