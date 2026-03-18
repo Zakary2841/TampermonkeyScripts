@@ -3,7 +3,7 @@
 // @namespace    distractions
 // @version      0.1
 // @description  Remove unread notification count from tab titles
-// @author       Viswanath Sivakumar
+// @author       Zakary2841
 // @match        *://*/*
 // @grant        none
 // @downloadURL https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Remove_Title_Notifications_from_Tabs.js

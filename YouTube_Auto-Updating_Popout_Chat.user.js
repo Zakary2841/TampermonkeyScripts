@@ -8,7 +8,7 @@
 // @grant        GM_xmlhttpRequest
 // @connect      youtube.com
 // @connect      www.youtube.com
-// @author       Zakary
+// @author       Zakary2841
 // @downloadURL https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/YouTube_Auto-Updating_Popout_Chat.js
 // @updateURL   https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/YouTube_Auto-Updating_Popout_Chat.js
 // ==/UserScript==
