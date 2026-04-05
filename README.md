@@ -8,6 +8,7 @@ Works with Tampermonkey or Violentmonkey.
 |--------|-------------|---------|
 | Remove Title Notifications from Tabs | Removes `(n)` count prefixes from page titles | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Remove_Title_Notifications_from_Tabs.user.js) |
 | YouTube Auto-Updating Popout Chat | Syncs YouTube popout chat to current live stream | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/YouTube_Auto-Updating_Popout_Chat.user.js) |
+| eBay US to UK Redirect | Redirects ebay.com to ebay.co.uk preserving item IDs and search | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/eBay_US_to_UK_Redirect.user.js) |
 
 ## Prerequisites
 
