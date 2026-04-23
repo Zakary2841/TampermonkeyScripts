@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         eBay US to UK Redirect
-// @namespace    http://tampermonkey.net/
-// @version      1.0
+// @namespace    Zakary2841.TampermonkeyScripts
+// @version      1.0.1
 // @description  Redirects ebay.com to ebay.co.uk while preserving item IDs and search parameters
 // @author       Zakary2841
 // @match        *://*.ebay.com/*

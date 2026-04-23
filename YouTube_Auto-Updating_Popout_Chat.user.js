@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Auto-Updating Popout Chat (CORS-safe)
-// @namespace    yt-auto-chat-final
-// @version      3.0
+// @namespace    Zakary2841.TampermonkeyScripts
+// @version      3.0.1
 // @description  Keep YouTube popout chat synced to the latest live stream using GM_xmlhttpRequest
 // @match        https://www.youtube.com/live_chat?is_popout=1&v=*
 // @run-at       document-start

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Home Assistant ESC to Close Dialogs
-// @namespace    https://github.com/Zakary2841/TampermonkeyScripts
-// @version      1.0
+// @namespace    Zakary2841.TampermonkeyScripts
+// @version      1.0.1
 // @description  Press ESC to close any open Home Assistant dialog
 // @match        *://*/*
 // @grant        none
