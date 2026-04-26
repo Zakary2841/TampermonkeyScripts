@@ -10,6 +10,7 @@ Works with Tampermonkey or Violentmonkey.
 | YouTube Auto-Updating Popout Chat | Syncs YouTube popout chat to current live stream | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/YouTube_Auto-Updating_Popout_Chat.user.js) |
 | eBay US to UK Redirect | Redirects ebay.com to ebay.co.uk preserving item IDs and search | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/eBay_US_to_UK_Redirect.user.js) |
 | Home Assistant ESC Close Dialogs | Press ESC to close dialogs in Home Assistant | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/Home_Assistant_ESC_to_Close_Dialogs.user.js) |
+| TechnitiumDNS Title Fix | Uppercases server name display in TechnitiumDNS web UI | [Install](https://raw.githubusercontent.com/Zakary2841/TampermonkeyScripts/main/TechnitiumDNS_Title_Fix.user.js) |
 
 ## Prerequisites
 
