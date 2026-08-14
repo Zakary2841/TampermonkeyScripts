@@ -1,11 +1,14 @@
 // ==UserScript==
 // @name         YouTube Auto-Updating Popout Chat (CORS-safe)
 // @namespace    Zakary2841.TampermonkeyScripts
-// @version      3.0.1
+// @version      3.1.0
 // @description  Keep YouTube popout chat synced to the latest live stream using GM_xmlhttpRequest
 // @match        https://www.youtube.com/live_chat?is_popout=1&v=*
 // @run-at       document-start
 // @grant        GM_xmlhttpRequest
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_registerMenuCommand
 // @connect      youtube.com
 // @connect      www.youtube.com
 // @author       Zakary2841
@@ -17,8 +20,43 @@
     "use strict";
 
     // ===== CONFIG =====
-    const channelHandle = "@ADeliciousMango";
-    const checkIntervalMinutes = 10;
+    const defaults = {
+        channelHandle: "@ADeliciousMango",
+        checkIntervalMinutes: 10
+    };
+
+    function getConfig() {
+        return {
+            channelHandle: GM_getValue("channelHandle", defaults.channelHandle),
+            checkIntervalMinutes: parseFloat(GM_getValue("checkIntervalMinutes", defaults.checkIntervalMinutes))
+        };
+    }
+
+    function saveConfig(key, value) {
+        GM_setValue(key, value);
+        alert(`[YT-AutoChat] ${key} set to: ${value}\nReload the page for it to take effect.`);
+    }
+
+    function editSetting(key, label, validator) {
+        const current = GM_getValue(key, defaults[key]);
+        const input = prompt(label, current);
+        if (input === null) return; // user cancelled
+        if (validator && !validator(input)) {
+            alert("Invalid value. Setting not saved.");
+            return;
+        }
+        saveConfig(key, input);
+    }
+
+    GM_registerMenuCommand("Edit channel handle", () => {
+        editSetting("channelHandle", "Enter YouTube channel handle (e.g. @ADeliciousMango):", v => v.startsWith("@"));
+    });
+
+    GM_registerMenuCommand("Edit check interval (minutes)", () => {
+        editSetting("checkIntervalMinutes", "Enter check interval in minutes:", v => !isNaN(v) && parseFloat(v) > 0);
+    });
+
+    const config = getConfig();
     // ===== END CONFIG =====
 
     let currentVideoId = new URL(location.href).searchParams.get("v");
@@ -39,7 +77,7 @@
     }
 
     function checkForNewStream() {
-        const url = `https://www.youtube.com/${channelHandle}/live`;
+        const url = `https://www.youtube.com/${config.channelHandle}/live`;
 
         GM_xmlhttpRequest({
             method: "GET",
@@ -69,7 +107,7 @@
         checkForNewStream();
         setInterval(
             checkForNewStream,
-            checkIntervalMinutes * 60 * 1000
+            config.checkIntervalMinutes * 60 * 1000
         );
     }, 500);
 
